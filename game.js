@@ -102,3 +102,11 @@ $(document).keypress(function(event){
         $("h1").text("Level "+level);
     }
 })
+
+function myPhoneFunction(){
+    if(!gameStarted){
+        nextSequence();
+        gameStarted = true;
+        $("h1").text("Level "+level);
+    }  
+}
